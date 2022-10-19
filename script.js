@@ -1,21 +1,6 @@
 console.log('attento a cosa scrivi')
 
-const delay = 3 * 1000;
 
-// generare un array di 5 num casuali
-const numeri = creaArrayDiNumeriUnici(5, 1, 100)
-console.log(numeri)
-
-// mostare numeri all utente
-alert(`Memorizza questi numeri: ${numeri.join(', ')}`)
-
-// dopo 30 sec chiediamo all utente di inssreire 5 num
-setTimeout (() => {
-   console.log('chiediamo numeri all utente') 
-}, delay)
-
-
-// diciamo all uetnte quali numeri ha azzeccato
 
 
 function getRandomIntInclusive(min, max) {
