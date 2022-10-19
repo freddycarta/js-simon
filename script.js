@@ -3,6 +3,7 @@ console.log('attento a cosa scrivi')
 const delay = 2 * 1000;
 const numeriUtente = []
 const numeriIndovinati = []
+const Numbers = document.querySelector('.result')
 
 // generare un array di 5 num casuali
 const numeri = creaArrayDiNumeriUnici(5, 1, 100)
@@ -25,9 +26,7 @@ setTimeout (() => {
    }
 //    console.log(numeri, numeriUtente, numeriIndovinati)
    // diciamo all utente quali numeri ha azzeccato
-        alert(
-            `hai indovinato i numeri: ${numeriIndovinati}` 
-            )
+        Numbers.innerHTML = (`Hai indovinato i numeri: ${numeriIndovinati}`           )
 }, delay)
 
 
